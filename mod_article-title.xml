@@ -32,6 +32,13 @@
 					description="MOD_ARTICLE-TITLE_TITLE_DESCRIPTION"
 					hint="My New Title Override"
 				/>
+				<field
+					name="module-background"
+					type="accessiblemedia"
+					label="MOD_ARTICLE-TITLE_BACKGROUND_LABEL"
+					description="MOD_ARTICLE-TITLE_BACKGROUND_DESCRIPTION"
+					directory="module-backgrounds"
+				/>
 			</fieldset>
 			<fieldset
 					name="advanced">

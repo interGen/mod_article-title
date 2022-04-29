@@ -15,4 +15,7 @@ $menuTitle = Factory::getDocument()->getTitle();
 $title = $params->get('title-override', $menuTitle);
 echo $title;
 
+$bkgd = $params->get('module-background');
+echo $bkgd;
+
 ?>
