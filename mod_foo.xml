@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="module" version="3.8" client="site" method="upgrade">
-	<name>MOD_INTERGENBOILERPLATE</name>
-	<creationDate>[DATE]</creationDate>
-	<author>[AUTHOR]</author>
-	<authorEmail>[AUTHOR_EMAIL]</authorEmail>
-	<authorUrl>[AUTHOR_URL]</authorUrl>
-	<copyright>[COPYRIGHT]</copyright>
+	<name>MOD_ARTICLE-TITLE</name>
+	<creationDate>April 29, 2022</creationDate>
+	<author>Brian Mitchell</author>
+	<authorEmail>brian.mitchell@intergen.org</authorEmail>
+	<authorUrl>https://intergen.org</authorUrl>
+	<copyright>intergen, inc 2022</copyright>
 	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
 	<version>1.0</version>
-	<description>MOD_INTERGENBOILERPLATE_XML_DESCRIPTION</description>
+	<description>MOD_ARTICLE-TITLE_XML_DESCRIPTION</description>
 
 	<files>
-		<filename module="mod_intergenboilerplate">mod_intergenboilerplate.php</filename>
+		<filename module="mod_article-title">mod_article-title.php</filename>
 		<folder>tmpl</folder>
 		<folder>language</folder>
-		<filename>mod_intergenboilerplate.xml</filename>
+		<filename>mod_article-title.xml</filename>
 	</files>
 
 	<!-- Update servers -->
 	<updateservers>
-		<server type="extension" priority="1" name="[PROJECT_NAME]">https://www.example.com/mod_intergenboilerplate.xml</server>
+		<server type="extension" priority="1" name="[PROJECT_NAME]">https://www.example.com/mod_article-title.xml</server>
 	</updateservers>
 
 	<config>
@@ -28,8 +28,8 @@
 				<field
 					name="domain"
 					type="url"
-					label="MOD_INTERGENBOILERPLATE_URL_LABEL"
-					description="MOD_INTERGENBOILERPLATE_URL_DESCRIPTION"
+					label="MOD_ARTICLE-TITLE_URL_LABEL"
+					description="MOD_ARTICLE-TITLE_URL_DESCRIPTION"
 					hint="https://www.example.com"
 					filter="url"
 					validate="url"

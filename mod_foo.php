@@ -1,11 +1,11 @@
 <?php
 /**
- * @package    [PACKAGE_NAME]
+ * @package    Article Title
  *
- * @author     [AUTHOR] <[AUTHOR_EMAIL]>
- * @copyright  [COPYRIGHT]
+ * @author     Brian Mitchell <brian.mitchell@intergen.org>
+ * @copyright  intergen, inc 2022
  * @license    GNU General Public License version 2 or later; see LICENSE.txt
- * @link       [AUTHOR_URL]
+ * @link       https://intergen.org
  */
 
 use Joomla\CMS\Helper\ModuleHelper;
@@ -14,4 +14,4 @@ defined('_JEXEC') or die;
 
 $moduleclass_sfx = htmlspecialchars($params->get('moduleclass_sfx'));
 
-require ModuleHelper::getLayoutPath('mod_intergenboilerplate', $params->get('layout', 'default'));
+require ModuleHelper::getLayoutPath('mod_article-title', $params->get('layout', 'default'));

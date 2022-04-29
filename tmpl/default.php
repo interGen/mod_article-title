@@ -1,11 +1,11 @@
 <?php
 /**
- * @package    [PACKAGE_NAME]
+ * @package    Article Title
  *
- * @author     [AUTHOR] <[AUTHOR_EMAIL]>
- * @copyright  [COPYRIGHT]
+ * @author     Brian Mitchell <brian.mitchell@intergen.org>
+ * @copyright  intergen, inc 2022
  * @license    GNU General Public License version 2 or later; see LICENSE.txt
- * @link       [AUTHOR_URL]
+ * @link       https://intergen.org
  */
 
 defined('_JEXEC') or die;
