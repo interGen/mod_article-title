@@ -19,7 +19,7 @@
 
 	<!-- Update servers -->
 	<updateservers>
-		<server type="extension" priority="1" name="[PROJECT_NAME]">https://www.example.com/mod_article-title.xml</server>
+		<server type="extension" priority="1" name="Article Title">https://www.example.com/mod_article-title.xml</server>
 	</updateservers>
 
 	<config>

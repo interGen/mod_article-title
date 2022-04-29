@@ -15,5 +15,5 @@ $domain = $params->get('domain', 'https://www.joomla.org');
 ?>
 
 <a href="<?php echo $domain; ?>">
-	<?php echo '[PROJECT_NAME]'; ?>
+	<?php echo 'Article Title Module'; ?>
 </a>
