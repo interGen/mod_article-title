@@ -34,7 +34,7 @@
 				/>
 				<field
 					name="module-background"
-					type="accessiblemedia"
+					type="media"
 					label="MOD_ARTICLE-TITLE_BACKGROUND_LABEL"
 					description="MOD_ARTICLE-TITLE_BACKGROUND_DESCRIPTION"
 					directory="module-backgrounds"
