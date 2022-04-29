@@ -10,22 +10,9 @@
 
 defined('_JEXEC') or die;
 
-// Access to module parameters
-$domain = $params->get('domain', 'https://www.joomla.org');
-?>
-
-<a href="<?php echo $domain; ?>">
-	<?php echo 'Article Title Module'; ?>
-</a>
-
-<?php
-
-$input = JFactory::getApplication()->input;
-$id = $input->getInt('id', 0);
-if($id > 0 && $input->getString('option') == 'com_content' && $input->getString('view') == 'article') {
-	$c = JTable::getInstance('content');
-	$c->load($id);
-	echo $c->title;
-}
+use Joomla\CMS\Factory;
+$menuTitle = Factory::getDocument()->getTitle();
+$title = $params->get('title-override', $menuTitle);
+echo $title;
 
 ?>
