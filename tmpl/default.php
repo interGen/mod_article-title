@@ -13,7 +13,7 @@ defined('_JEXEC') or die;
 use Joomla\CMS\Factory;
 $bkgd = $params->get('module-background');
 
-$style = '.mod-article-title {
+$style = '.mod-article-title-img {
     background-image: url("' . $bkgd . '");
 }';
 $document = Factory::getDocument();
