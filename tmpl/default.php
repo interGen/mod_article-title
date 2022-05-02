@@ -17,4 +17,4 @@ echo $title . "<br>";
 
 $bkgd = $params->get('module-background');
 echo '<img class="mod-title-img" src="' . $bkgd . '"/>';
-?>?>
+?>
