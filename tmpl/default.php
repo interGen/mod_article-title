@@ -18,5 +18,5 @@ $menuTitle = Factory::getDocument()->getTitle();
 echo preg_replace('/' . $sitename . '/i', '', $menuTitle);
 
 $bkgd = $params->get('module-background');
-echo '<img class="mod-title-img" src="' . $bkgd . '"/>';
+echo '<img class="mod-article-title-img" src="' . $bkgd . '"/>';
 ?>
