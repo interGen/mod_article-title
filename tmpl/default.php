@@ -11,12 +11,18 @@
 defined('_JEXEC') or die;
 
 use Joomla\CMS\Factory;
+$bkgd = $params->get('module-background');
+
+$style = '.mod-article-title {
+    background-image: url("' . $bkgd . '");
+}';
+$document = Factory::getDocument();
+$document->addStyleDeclaration( $style );
 
 $sitename = " - " . $app->getCfg('sitename');
 
 $menuTitle = Factory::getDocument()->getTitle();
 echo preg_replace('/' . $sitename . '/i', '', $menuTitle);
 
-$bkgd = $params->get('module-background');
-echo '<img class="mod-article-title-img" src="' . $bkgd . '"/>';
+// echo '<img class="mod-article-title-img" src="' . $bkgd . '"/>';
 ?>
