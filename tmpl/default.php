@@ -11,9 +11,11 @@
 defined('_JEXEC') or die;
 
 use Joomla\CMS\Factory;
+
+$sitename = " - " . $app->getCfg('sitename');
+
 $menuTitle = Factory::getDocument()->getTitle();
-$title = $params->get('title-override', $menuTitle);
-echo $title . "<br>";
+echo preg_replace('/' . $sitename . '/i', '', $menuTitle);
 
 $bkgd = $params->get('module-background');
 echo '<img class="mod-title-img" src="' . $bkgd . '"/>';
