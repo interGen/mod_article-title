@@ -16,5 +16,5 @@ $title = $params->get('title-override', $menuTitle);
 echo $title . "<br>";
 
 $bkgd = $params->get('module-background');
-echo $bkgd;
-?>
+echo '<img class="mod-title-img" src="' . $bkgd . '"/>';
+?>?>
