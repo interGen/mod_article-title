@@ -24,6 +24,4 @@ $sitename = " - " . $app->getCfg('sitename');
 $menuTitle = Factory::getDocument()->getTitle();
 $text = preg_replace('/' . $sitename . '/i', '', $menuTitle);
 echo '<h1 class="mod-article-title-text">' . $text . '</h1>';
-
-// echo '<img class="mod-article-title-img" src="' . $bkgd . '"/>';
 ?>
