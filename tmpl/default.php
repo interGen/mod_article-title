@@ -10,18 +10,11 @@
 
 defined('_JEXEC') or die;
 
-use Joomla\CMS\Factory;
-$bkgd = $params->get('module-background');
-
+// set the background of the module
 $style = '.mod-article-title {
     background-image: url("' . $bkgd . '");
 }';
-$document = Factory::getDocument();
-$document->addStyleDeclaration( $style );
 
-$sitename = " - " . $app->getCfg('sitename');
-
-$menuTitle = Factory::getDocument()->getTitle();
-$text = preg_replace('/' . $sitename . '/i', '', $menuTitle);
+// place the title in the module as heading 1
 echo '<h1 class="mod-article-title-text">' . $text . '</h1>';
 ?>
