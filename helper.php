@@ -37,8 +37,8 @@ class ModArticleTitleHelper
 
         // use the title override if it is set
         $override = $params->get('title-override');
-        if (isset($overide)) {
-            $text = $overide;
+        if (isset($override)) {
+            $text = $override;
         }
     }
 }
