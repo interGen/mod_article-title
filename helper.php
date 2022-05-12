@@ -31,8 +31,14 @@ class ModArticleTitleHelper
         // find the sitename
         $sitename = " - " . $app->getCfg('sitename');
 
-        // if included in the page <title>, remove sitename from the title displayd in the module
+        // if the sitename is included in the page <title>, remove it
         $menuTitle = Factory::getDocument()->getTitle();
         $text = preg_replace('/' . $sitename . '/i', '', $menuTitle);
+
+        // use the title override if it is set
+        $override = $params->get('title-override');
+        if (isset($overide)) {
+            $text = $overide;
+        }
     }
 }

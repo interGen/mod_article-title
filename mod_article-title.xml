@@ -28,7 +28,7 @@
 			<fieldset name="basic">
 				<field
 					name="title-override"
-					type="test"
+					type="text"
 					label="MOD_ARTICLE-TITLE_TITLE_LABEL"
 					description="MOD_ARTICLE-TITLE_TITLE_DESCRIPTION"
 					hint="My New Title Override"
