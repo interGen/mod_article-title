@@ -14,7 +14,7 @@ use Joomla\CMS\Factory;
 $bkgd = $params->get('module-background');
 
 $style = '.mod-article-title {
-    background-image: url("' . $bkgd . '");
+    background-image: url("/' . $bkgd . '");
 }';
 $document = Factory::getDocument();
 $document->addStyleDeclaration( $style );
